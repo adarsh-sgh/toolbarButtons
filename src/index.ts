@@ -9,7 +9,10 @@ joplin.plugins.register({
 			iconName: 'fas fa-strikethrough',
 			execute: () => new Promise((resolve, reject) => {
 				const selectedText = joplin.commands.execute('selectedText');
-				selectedText.then(selection => { joplin.commands.execute('replaceSelection', `~~${selection}~~`) });
+				selectedText.then(selection => { 
+					joplin.commands.execute('replaceSelection', `~~${selection||"strike"}~~`).then(()=>joplin.commands.execute('editor.focus'))
+					
+				});
 				resolve(1);
 			})
 		})
