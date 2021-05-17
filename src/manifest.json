@@ -1,0 +1,12 @@
+{
+	"manifest_version": 1,
+	"id": "com.plugin.toolbarButton",
+	"app_min_version": "1.7",
+	"version": "1.0.0",
+	"name": "add toolbar button",
+	"description": "Allows creating custom toolbar buttons",
+	"author": "lkiThakur",
+	"homepage_url": "",
+	"repository_url": "",
+	"keywords": []
+}
